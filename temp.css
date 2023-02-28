@@ -1,0 +1,492 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: rgba(0, 0, 0, 0.906);
+}
+header{
+    position: fixed;
+   top:0; left:0;
+    width:100%;
+    background:black;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    display: flex;
+    color: darkgrey;
+    opacity: 95%;
+    align-items: center;
+ justify-content: space-between;
+   z-index: 1000;
+    
+}
+header img{
+    width: 4rem;
+}
+header .logo{
+    font-size: 3rem;
+    font-weight: 800;
+    color:darkorange;
+    margin-right: 5rem;
+    margin-left:0rem;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    color: darkorange;
+    margin-left: 2rem;
+}
+
+header input:not(.search){
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:darkorange;
+    cursor: pointer;
+    opacity: 1;
+    visibility: hidden;
+}
+
+
+.home-page, .das, .instruct, .find-us, .work-p{
+    display: flex;
+}
+.text button{
+    margin-top: 4rem;
+    padding: 1.2rem;
+    background-color: darkorange;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 2rem;
+}
+
+section{
+    height: 100h;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+section h1{
+    font-size: 3rem;
+    color: darkorange;
+    border: 3px solid darkorange;
+    margin: 3rem 8rem;
+    padding: 1.2rem;
+
+}
+.home-page{
+    background: rgba(0, 0, 0, 0.906);
+    padding: 13rem 8rem;
+    margin-top: 8rem;
+    height: 100vh;
+
+}
+.home{
+}
+.home-page p{
+    color: darkorange;
+    font-size:2.2rem;
+    margin-top: 5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.home-page img{
+    width: 20rem;
+}
+.days, .instruct{
+    text-align: center;
+    justify-content: center;
+}
+.days h2{
+    font-size: 3rem;
+    color: darkorange;
+    border: 0;
+}
+
+.days h4{
+    font-size: 2rem;
+    margin: 1rem;
+    
+}
+.day{
+    border: 3px solid darkorange;
+    padding: 1.2rem;
+    border-radius: 5px;
+    
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem 8rem;
+
+}
+
+.instruct img{
+    width: 15rem;
+
+}
+.instruct{
+    padding: 2rem;
+    background: geen;
+    margin: 3rem 8rem;
+    border-radius: 5px;
+    
+}
+.inst{
+    background: darkorane;
+}
+.inst-profile{
+    background: oange;
+    font-size:2rem;
+    line-height: 3rem;
+    padding: 3rem;
+    color: white;
+}
+.inst-profile button{
+    background: rgba(0, 0, 0, 0.906);
+
+    border:3px solid darkorange;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 6px;
+    color: white;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.big img{
+    width:20rem;
+    margin-left: -8rem;
+}
+.big-p{
+    margin-left: 3rem;
+}
+h2{
+    border: 3px solid darkorange;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 3rem 8rem;
+    font-size: 2rem;
+    color: darkorange;
+}
+.find-us{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+.find-us input{
+    display: fle;
+    padding: 1.2rem 2rem;
+    border: 3px solid white;
+    background: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin: 3rem;
+    color: white;
+    outline: 0;
+}
+.find-us input::placeholder{
+    color: darkgray;
+}
+.find-us button{
+    padding: 1.2rem;
+    border:none;
+    background: darkorange;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 600;
+}
+
+.screen-size{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 50% 3rem;
+    position: fixed;
+}
+.screen-size p{
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+    
+    line-height: 3rem;
+}
+
+.work-p {
+    display: flex;
+    margin: 3rem 8rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.work-p button{
+    padding: 1.2rem;
+    border: 0;
+    font-size:2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 2rem;
+    color: darkorange;
+
+}
+button:hover{
+    background: darkorange;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.skill {
+    width:200px;
+    height:200px;
+    position:relative;
+    
+}
+.outer {
+    width:160px;
+    height:160px;
+    padding:20px;
+    border-radius:150px;
+    border:1px ;
+    box-shadow: 6px 6px 10px
+    
+}
+.inner {
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    border:1px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    box-shadow:inset 6px 6px 10px
+
+    
+
+}
+#number {
+    font-size:20px;
+    color: darkorange;
+    font-weight:bold;
+    
+}
+circle {
+    fill:none;
+    stroke:darkorange;
+    stroke-width:20px;
+    stroke-dasharray:472;
+    stroke-dashoffset:472;
+    animation: anim 4s forwards;
+    animation-iteration-count: infinite;
+}
+svg {
+    position:absolute ;
+    top:0;
+    left:0
+}
+@keyframes anim { 100%{stroke-dashoffset:190;}
+}
+
+
+
+.footer{
+    padding-top: 3rem;
+    margin-top: 5rem;
+    
+    /* background:linear-gradient(black, darkgrey); */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:1.1rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:darkorange;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .box-container .box p{
+    font-size: 2rem;
+    padding:.5rem 0;
+    color:darkorange;
+}
+.footer .box-container .box .info p{
+  font-size: 1.5rem;
+  align-items: center;
+     padding:.5rem 0;
+    color:darkorange;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:darkorange;
+    
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box .info{
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .box-container .box .info i{
+    margin:.5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:darkorange;
+    color: white;
+    font-size: 1.5rem;
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+.info{
+    text-align: center;
+    align-items: center;
+    margin-left: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:946px) {
+    .day{
+        margin: 3rem 30rem;
+    }
+    /* section h1{
+        margin: 3rem 30rem;
+    } */
+}
+
+@media(min-width:946px){
+    input:not(.find-us input){
+      display: none;
+    }
+  } 
+
+
+  /* @media (max-width:690px) {
+    .find-us{
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .find-us input{
+       margin-left: 8rem ;
+
+    }
+  } */
+
+
+
+  @media (max-width:554px) {
+    main{
+        visibility: hidden;
+    }
+    .screen-size{
+        display: flex;
+    }
+    body{
+        background-color: darkorange;
+    }
+    
+  }
+
+   @media (max-width:946px){ 
+
+     header label{
+          visibility: visible;
+          opacity: 1;
+          color: darkorange;
+      }
+  
+      header .navbar{
+          position: absolute;
+          top:100%; left: 0;
+          width:100%;
+          height:70vh;
+          background:#000;
+          padding:1rem 2rem;
+          border-top: .1rem solid rgba(0,0,0,.2);
+          box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+          transform-origin: top;
+          transform: scaleY(0);
+          opacity: 0;
+          transition: .2s linear;
+      }
+  
+     header .navbar a{
+          display: block;
+          margin:4rem 0rem;
+          font-size: 2rem;
+          color: darkorange;
+      }
+  
+      header input:checked ~ .navbar{
+          transform: scaleY(1);
+          opacity: 1;
+      }
+  
+      header input:checked ~ label::before{
+          content:'\f00d';
+      }
+  } 
+  
+  @media (min-width:946px) {
+    .instruct{
+        padding: 2rem;
+        margin: 3rem 8rem;
+        border-radius: 5px;
+        display: inline-block;
+    }
+  }
